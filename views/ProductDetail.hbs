@@ -1,0 +1,26 @@
+{{>Home}}
+
+<div class="body">
+    <div class="row content h-5">
+        <div class="col-3 bg-primary">
+            <img src={{data.LINK_ANH_BS1}} class="card-img-top" alt="...">
+            <img src={{data.LINK_ANH_BS2}} class="card-img-top" alt="...">
+            <img src={{data.LINK_ANH_BS3}} class="card-img-top" alt="...">
+        </div>
+
+        <div class="col-9 bg-success">
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">{{data.TEN_SAN_PHAM}}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{data.GIA_HIEN_TAI}}</h6>
+                    <p class="card-text">{{data.MO_TA}}.</p>
+                    <a href="/payment/{{data.MA_SAN_PHAM}}" class="btn btn-primary">Mua Hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row relate">
+        product relate
+    </div>
+</div>

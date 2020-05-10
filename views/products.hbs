@@ -1,0 +1,44 @@
+{{>Home}}
+
+<div class="body">
+
+    <div class="row product-list d-flex">
+        <div class="col-3 categories">
+            <ul class="list-group">
+                <li class="list-group-item active">Categories</li>
+                {{#each categories}}
+                <a href="/categories/{{MA_LOAI_HANG}}">
+                    <li class="list-group-item {{isActive}}">{{TEN_LOAI}}</li>
+                </a>
+                {{/each}}
+
+            </ul>
+        </div>
+        <div class="col-9 content" style="display: flex; flex-wrap:wrap">
+            {{#each products}}
+            <a href="/product/{{MA_SAN_PHAM}}">
+                <div class="card">
+                    <div class="img">
+                        <img src={{LINK_ANH}} class="card-img-top" alt="...">
+                    </div>
+
+                    <div class="card-body">
+                        <h5 class="card-title">{{TEN_SAN_PHAM}}</h5>
+                        <p class="card-text btn btn-danger">VNĐ {{GIA_HIEN_TAI}}</p>
+
+                        <span>
+                            <a href="/payment/{{MA_SAN_PHAM}}/{{GIA_HIEN_TAI}}" class="btn btn-outline-success mt-3">Mua Ngay</a>
+                            
+                        </span>
+
+                        {{!-- <a href="/product/{{MA_SAN_PHAM}}" class="btn btn btn-outline-info">Chi Tiết</a> --}}
+                    </div>
+                </div>
+            </a>
+            {{/each}}
+        </div>
+
+    </div>
+</div>
+
+{{>Footer}}

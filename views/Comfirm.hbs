@@ -1,0 +1,30 @@
+<meta http-equiv="refresh" content="3;url=https://hcmus1712879.herokuapp.com/" />
+<style>
+    .image img{
+        width: 300px;
+        height: 300px;
+    }
+    .body{
+        margin-top: 20px;
+        text-align: center;
+    }
+</style>
+<div class="body">
+    <div class="notification">
+        <h3 style="color: brown;" class="font-weight-bolder">{{data.localMessage}}</h3>
+        <p class="font-weight-lighter">Sau 3s hệ thống sẽ quay về trang chủ</p>
+    </div>
+    <div class="image">
+        {{#if data.isSuccess}}
+        <img src="https://i.pinimg.com/originals/72/92/03/7292035c49838289d60300774f917462.gif">
+        {{else}}
+        <img
+            src="https://thumbs.gfycat.com/EnchantedFirsthandAzurevasesponge-size_restricted.gif">
+        {{/if}}
+    </div>
+
+
+
+
+
+</div>

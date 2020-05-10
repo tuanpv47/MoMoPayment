@@ -1,0 +1,36 @@
+a{
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: red;
+    transform: scale(1.1);
+    transition: .1s all;
+}
+
+.home{
+    text-align: center;
+}
+
+.content{
+    justify-content: space-evenly;
+}
+
+.card{
+    width: 16rem;
+}
+.img{
+    display: flex;
+    justify-content: center;
+}
+.content img{
+    text-align: center;
+    padding: 15px;
+    width: 200px;
+    height: 200px;
+}
+
+.isActive{
+    color: red;
+}
